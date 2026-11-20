@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import type { ReactNode } from 'react';
 import {
   Thermometer,
   Droplets,
   Sun,
   Leaf,
   Wifi,
-  WifiOff,
   AlertTriangle,
   AlertCircle,
   Info,
@@ -45,7 +45,7 @@ function StatCard({
   color,
   trend,
 }: {
-  icon: React.ReactNode;
+  icon: ReactNode;
   title: string;
   value: string;
   unit: string;
